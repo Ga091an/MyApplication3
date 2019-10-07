@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timg"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="382dp"
+        android:layout_height="134dp"
+        android:layout_above="@+id/weatherSymbolIV"
+
+        android:text="17：00"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tempL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="199dp"
+        android:layout_marginRight="199dp"
+        android:text="17"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="90sp" />
+
+
+    <TextView
+        android:id="@+id/tempR"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/tempL"
+
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="-14dp"
+        android:text="℃"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tempB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempL"
+        android:layout_below="@+id/tempL"
+
+        android:text="16~26℃"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+    android:id="@+id/tempB2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginEnd="-19dp"
+    android:layout_marginRight="-19dp"
+    android:layout_below="@+id/tempB1"
+        android:layout_alignLeft="@+id/tempL"
+    android:text="晴转多云"
+    android:layout_centerVertical="true"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#FFFFFF"
+    android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tempMini"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/tempL"
+
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="-53dp"
+        android:text="晴(实时)"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tempB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="-19dp"
+        android:layout_marginRight="-19dp"
+        android:layout_below="@+id/tempB2"
+        android:layout_alignLeft="@+id/tempL"
+        android:text="西风3～4级"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/weatherSymbolIV"
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/tempL"
+        android:layout_marginBottom="-17dp"
+        android:contentDescription="moon"
+
+        android:src="@drawable/i999" />
+
+</RelativeLayout>
+
